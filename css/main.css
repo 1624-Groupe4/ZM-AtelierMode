@@ -1,0 +1,346 @@
+
+
+/* ==========================================================================
+   Pour personnaliser certains éléments
+   ========================================================================== */
+body{
+	padding-top:0px;
+}
+/*pour le menu secondaire avec le panier*/
+.navbar{
+	background-color:#FFF;
+	margin:0px;
+	border:none;
+	z-index:100;
+}
+/*pour le logo de la boutique*/
+/*pour ajuster le width du logo dans le @media max-width:767*/
+@media (max-width:767px){
+	.navbar-brand img{
+		width:150px;
+		margin-top:0px;
+	}
+}
+@media (min-width:768px){
+	.navbar-brand img{
+		width:200px;
+		margin-top:-5px;
+	}
+}
+@media (min-width:992px){
+	.navbar-brand img{
+		width:200px;
+		margin-top:-5px;
+	}
+}
+@media (min-width:1200px){
+	.navbar-brand img{
+		width:200px;
+		margin-top:-5px;
+	}
+}
+/*pour le menu principal*/
+.navbar-inverse{
+	height:70px;
+	border-radius:0px;
+	border:none;
+	margin:0px 0px 0px 0px;
+}
+.navbar-inverse .navbar-header{
+	height:70px;
+}
+/*pour ajuster le padding des "a" du premier niveau dans les differents @media*/
+@media (max-width:767px){
+	.navbar-inverse .navbar-collapse > ul > li > a{
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	/*pour modifier le menu collapsable #collapseDeux*/
+#collapseDeux ul{
+	background-image: linear-gradient(to bottom, #3C3C3C 0px, #222 100%);
+	background-repeat: repeat-x;
+	overflow:visible;
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+/*pour enlever le scroll du menu collapsable #collapseDeux*/
+#collapseDeux{
+	overflow:visible;
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+/*pour modifier le menu collapsable #collapseUn*/
+#collapseUn ul{
+	overflow:visible;
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+/*pour enlever le scroll du menu collapsable #collapseUn*/
+#collapseUn{
+	overflow:visible;
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+}
+@media (min-width:768px){
+	.navbar-inverse .navbar-collapse > ul > li > a{
+		padding-top:25px;
+		padding-bottom:25px;
+	}
+}
+@media (min-width:992px){
+	.navbar-inverse .navbar-collapse > ul > li > a{
+		padding-top:25px;
+		padding-bottom:25px;
+	}
+}
+@media (min-width:1200px){
+	.navbar-inverse .navbar-collapse > ul > li > a{
+		padding-top:25px;
+		padding-bottom:25px;
+	}
+}
+
+/*pour changer la largeur du .container dans le @media 768*/
+@media (min-width:768px){.container{width:780px}}
+@media (min-width:992px){.container{width:970px}}
+@media (min-width:1200px){.container{width:1170px}}
+
+/*pour ajouter le fond avec les motifs*/
+.fond{
+	background-image:url(../images/Fondo.png);
+	background-color:#EEE;
+}
+/*pour ajuster la taille de h1 et p dans le carrousel*/
+.carousel h1{
+	font-size:5vw;
+	margin-top:25%;
+}
+.carousel p{
+	font-size:3vw;
+	padding:0px;
+}
+/*pour définir la taille des images et des videos dans les "modals"*/
+.modal img, .modal video, .modal object, .modal embed {
+	width:100%;
+}
+/*pour enlever la bordure des "thumbnails"*/
+.img-thumbnail{
+	border:none;
+	width:100%;
+	padding:0px;
+}
+/*pour ajuster la taille de h1 et p dans le jumbotron*/
+.jumbotron h1{
+	font-size:6vw;
+}
+.jumbotron p{
+	font-size:18px;
+}
+/*pour ajouter un espace entre les éléments input de jumbotron filtrer recherche*/
+.jumbotron form fieldset > div{
+	margin-bottom:10px;
+}
+/*pour ajouter un espace entre les éléments input du formulaire*/
+form fieldset > div{
+	margin-bottom:20px;
+}
+/*changer la couleur des "a" dans la pagination*/
+.pagination > li > a{
+	color:#BBB;
+}
+.pagination > li > a:hover{
+	color:#db87b9;
+}
+/*ajouter border-radius aux boutons du jumbotron */
+.input-group-btn:last-child > .btn, .input-group-btn:first-child > .btn{
+	border-radius:4px;
+}
+/*Pour définir la taille du modal et son emplacement*/
+.modal-dialog{
+	width:70%;
+	padding-top:0;
+	margin-top:40px;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*pour placer le bouton "x" (qui ferme le modal) dans le coin en haut et à droite*/
+.modal-backdrop{
+	left:auto;
+	bottom:auto;
+	right:2px;
+}
+/*Pour enlever la bordeure, le top et le bottom padding du header dans le modal, où il se trouve l'image pour chaque produit*/
+.modal-header{
+	padding:0 15px;
+	border:none;
+}
+/*Pour enlever le bottom padding du body dans le modal*/
+.modal-body{
+	padding-bottom:0px;
+}
+/*Pour enlever la bordure et placer le bouton fermer à droite et en bas*/
+.modal-footer{
+	border:none;
+	padding:0 3px 3px 0;
+}
+
+/*Pour changer la couleur du "text-primary"*/
+.text-primary{
+	color:#db87b9 !important;
+}
+/*Pour changer la couleur du "text-primary"*/
+.text-success{
+	color:#FFF !important;
+}
+/*Pour changer la couleur du "bg-primary"*/
+.bg-primary{
+	background-color:#db87b9;    /*db87b9*/
+	color:#FFF;
+}
+.btn-primary{
+	background-color:#db87b9;    /*db87b9*/
+	background-image: linear-gradient(to bottom, #F3C 0px, #db87b9 100%);
+	border-color:#db87b9;
+	color:#FFF;
+}
+.btn-primary:hover{
+	background-color:#F3C;    /*db87b9*/
+	background-image: linear-gradient(to bottom, #db87b9 0px, #F3C 100%);
+	border-color:#F3C;
+	color:#FFF;
+}
+/*pour change la couleur du li panier dans le menu secondaire*/
+.navbar-default li.btn-default a{
+	color:#db87b9;
+}
+
+/*Pour enlever la ligne blanche*/
+.btn-default:hover {
+    background-position:0px 0px;;
+}
+/*Pour changer la couleur du "bg-danger"*/
+.bg-danger{
+	background-color:#333;
+	color:#FFF;
+}
+/*Pour changer la couleur du "bg-info"*/
+.bg-info{
+	background-color:#AAA;
+	color:#FFF;
+}
+/*Pour changer la couleur du "text-info"*/
+.text-info{
+	color:#BBB;
+}
+a.text-info:hover{
+	color:#AAA;
+}
+/*Pour personnaliser les listes dans les modals*/
+.modal-body .list-group-item{
+	padding:10px 0px;
+	border:none;
+	border-top:solid 1px #999999;
+	border-bottom:solid 1px #999999;
+	border-radius:0px;
+}
+.modal-body .list-group{
+	border:none;
+	box-shadow:none;
+}
+/*Pour personnaliser les listes dans le footer*/
+.list-group-item{
+	padding:5px 15px;
+	border:none;
+}
+.list-group{
+	border:none;
+	box-shadow:none;
+}
+li.list-group-item.bg-danger a:hover{
+	color:#999;
+	text-decoration:none;
+}
+/*Pour changer le margin des balises strong dans les "modals", sauf le premier strong*/
+.modal strong{
+	margin-left:20px;
+}
+.modal strong:first-child{
+	margin-left:0px;
+}
+
+/*pour definir la balise h5*/
+h5{
+	font-style:italic;
+}
+
+/*pour changer l'hauteur du textarea*/
+#textarea{
+	height:200px;
+}
+/*réseaux sociaux*/
+.res-social-sm {
+	width: 14px;
+	height: 14px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:22px;
+}
+.res-social-md {
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:34px;
+}
+.facebook {
+	background-image: url(../images/facebook.png);
+}
+.youtube {
+	background-image: url(../images/youtube.png);
+}
+.twitter {
+	background-image: url(../images/twitter_bird.png);
+}
+.instagram {
+	background-image: url(../images/instagram.png);
+}
+.favori {
+	background-image: url(../images/heart.png);
+}
+/*Pour mettre le téléphone et l'adresse dans la même ligne  -- Jumbotron footer*/
+h2.pull-left, p.pull-right{
+	margin:0px;
+}
+/*Pour enlever le margin-bottom du jumbotron */
+article.jumbotron{
+	margin-bottom:0px;
+}
+/*pour personnaliser la carte de GoogleMaps*/
+iframe{
+	border-radius:10px;
+}
+/*style pour les HR **** utiliser les class de Bootstrap pour changer la couleur*/
+hr{
+	margin:0px;
+	height:1px;
+	border:none;
+}
+/*pour modifier .img-responsive*/
+.img-responsive{
+	width:100%;
+}
+/*class qui enleve le padding*/
+.no-padding{
+	padding:0px;
+}
+
+
+
+
+
+
