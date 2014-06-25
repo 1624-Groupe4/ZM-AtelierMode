@@ -377,6 +377,17 @@ hr{
 }
 /*Fin classes pour le panier*/
 
+/* Classes pour les social medias */
+
+
+/* Button styles: */
+i.fb,       span.fb{     	color: #0c1322; }
+i.tw,       span.tw{     	color: #0c1322; }
+i.pinterest,span.pinterest{ color: #0c1322; }
+
+
+
+/* Fin classes pour les social medias */
 
 
 
