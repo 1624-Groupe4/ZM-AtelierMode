@@ -43,9 +43,9 @@
                 <div class="navbar-collapse collapse" id="collapseUn">
                     <ul class="nav navbar-nav pull-right">
                         <li><a class="text-info" href="#">Anglais</a></li>
-                        <li><a href="#">Se connecter</a></li>
-                        <li><a href="#">S'inscrire</a></li>
-                        <li class=" btn-default"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> panier</a></li>
+                        <li><a class="text-primary" href="#session" data-toggle="modal" data-target="#session">Se connecter</a></li><!--Modal Se connecter -->
+                        <li><a class="text-info" href="#inscrire" data-toggle="modal" data-target="#inscrire"> S'inscrire</a></li><!--Modal S'inscrire -->
+                        <li class="btn-default"><a href="#panier" data-toggle="modal" data-target="#panier"><span class="glyphicon glyphicon-shopping-cart"></span> panier</a></li><!--Modal Panier -->
                     </ul>
                 </div><!--/.navbar-collapse -->
               </nav><!--/.container -->
@@ -522,7 +522,7 @@
         </article>
         
         <!-- jumbotron pour le plan du site -->
-		<article class="jumbotron bg-danger">
+		<article class="jumbotron bg-danger" id="footer">
 			<div class="container">
             	<div class="row">
                 	<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
@@ -547,9 +547,9 @@
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                     	<ul class="list-group">
-                          <li class="list-group-item bg-danger"><a class="text-primary" href="#">Panier</a></li>
-                          <li class="list-group-item bg-danger"><a class="text-primary" href="#">Se connecter</a></li>
-                          <li class="list-group-item bg-danger"><a class="text-primary" href="#">S'inscrire</a></li>
+                          <li class="list-group-item bg-danger"><a class="text-primary" href="#panier" data-toggle="modal" data-target="#panier">Panier</a></li>
+                          <li class="list-group-item bg-danger"><a class="text-primary" href="#session" data-toggle="modal" data-target="#session">Se connecter</a></li>
+                          <li class="list-group-item bg-danger"><a class="text-primary" href="#inscrire" data-toggle="modal" data-target="#inscrire">S'inscrire</a></li>
                           <li class="list-group-item bg-danger"><a class="text-primary" href="#"> </a></li>
                           <li class="list-group-item bg-danger"><a class="text-primary" href="#"> </a></li>
                           <li class="list-group-item bg-danger"><a class="text-primary" href="#"> </a></li>
@@ -592,6 +592,168 @@
 				<p class="pull-left">&copy; Zaida Melo, Atelier de mode, 2014</p>
                 <p class="pull-right">Réalisation: Groupe4</p>
 			</footer>
+            
+            <!-- Modal se connecter-->
+    <article class="modal fade" id="session" role="dialog" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <article class="modal-body row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12">
+                                <h3  class="text-primary">Ouvrir une session</h3>
+                                <hr class="bg-primary"/>
+                                <br/>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="">
+                                        <a class="small "> Mot de passe oublié?</a>    
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="small">
+                                            <input type="checkbox">Garder ma session ouverte
+                                        </label>
+                                    </div>
+                                      <button type="submit" class="btn btn-default btn-primary">Connecter</button>
+                                </form>
+                            </div>   
+                            <div class="col-sm-6 col-xs-12 text-left">
+                                <h3  class="text-primary">Créer un compte</h3>
+                                <hr class="bg-primary"/>
+                                <br/>
+                                <p class="small text-justify"> Vous n’avez pas de compte? Créez un pour faire le suivi de vos achats, consulter l’historique de vos commandes et recevoir des offres exclusives et nos derniéres tendances.  <strong>L’inscription est simple et gratuite! </strong></p>
+                                <button class="btn btn-default btn-primary" data-dismiss="modal" href="#inscrire" data-toggle="modal" data-target="#inscrire">Créer un compte</button>
+                            </div>
+                            <button type="button" class="close modal-backdrop pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></button>
+                        </div>
+                        <br/>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </article><!--/Se connecter -->
+    <!-- Modal Creer un compte-->
+    <article class="modal fade" id="inscrire" role="dialog" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <article class="modal-body row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <h3  class="text-primary">Créer un compte</h3>
+                            <hr class="bg-primary"/>
+                            <br/>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="exampleInputPrenom">Prénom</label>
+                                        <input type="text" class="form-control" id="exampleInputPrenom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPrenom">Nom</label>
+                                        <input type="text" class="form-control" id="exampleInputNom">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword">Confirmer le Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                                    </div>
+                                    <div class="checkbox">
+                                        <label class="small">
+                                            <input type="checkbox">Recevoir des offres exclusives et nos derniéres tendances.
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default btn-primary">Créer un compte</button>
+                                </form>
+                        </div>   
+                        <button type="button" class="close modal-backdrop pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></button>
+                        <br/>
+					</div>
+                </article>
+            </div>
+        </div>
+    </article><!--/creer compte -->
+    
+    <!-- Modal panier -->
+    <article class="modal fade" id="panier" role="dialog" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                    <article class="modal-body">
+                    	<div class="row">
+                            <h2 class="text-primary text-center">Mon Panier</h2>
+                            <div class="col-xs-12"><!--Div pour chaque produit -->
+                            <br/>
+                            <hr class="bg-primary"/>
+                            <br/>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <img src="../images/Finissante-01.jpg" alt="" >	
+                                </div>
+                                <div class="col-md-8 col-sm-8 col-xs-8">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <h3>Marilyn</h3>
+                                            <hr class="bg-info"/>
+                                            <p><strong>Taille:</strong> M</p>
+                                            <hr class="bg-info"/>
+                                            <p><strong>Couleur:</strong> Noir</p>
+                                            <p class="small text-right text-info"><span class="glyphicon glyphicon-ok"></span> En stock</p>
+                                            <p  class="small" >Quantité: </p>
+                                            <div class="input-group input-group-sm ">
+                                                <span class="btn btn-default input-group-addon glyphicon glyphicon-minus"></span>
+                                                <input type="text" class="form-control text-center" placeholder="Qté">
+                                                <span class="btn btn-default input-group-addon glyphicon glyphicon-plus"></span>
+                                            </div>
+                                            <br />
+                                            <a class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove text-primary"></span> Supprimer</a>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12 text-right">
+                                            <ul class="list-group">
+                                            	<br/>
+                                                <li class="list-group-item">
+                                                    <span class="badge">100,00$</span>
+                                                    Prix:&nbsp;
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="badge">5,00$</span>
+                                                    TPS:&nbsp;
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <span class="badge">10,00$</span>
+                                                    TVQ:&nbsp;
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="close modal-backdrop pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></button>
+                                    </div>
+                                </div>
+                                <br/>
+                            </div><!--/Div chaque produit -->
+                    </div><!--/row-->
+                </article>
+                <footer class="modal-footer">
+                    <div class="col-sm-12">
+                    <hr class="bg-primary"/>
+                        <h1 class="text-primary">Total: 115.00$</h1>
+                        <button class="btn btn-default btn-primary">Passer à la caisse</button>
+                        <br/><br/>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </article><!--/modal panier-->
         
         
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
