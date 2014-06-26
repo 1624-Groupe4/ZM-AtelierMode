@@ -338,20 +338,9 @@ hr{
 .no-padding{
 	padding:0px;
 }
-/*classes pour le panier  Créés par Carlos Buitrago*/
-#panier span.input-group-addon{
-	top: 0px;	
-}
-#panier .modal-dialog{
-		width: 60%;
-	}
-.bor-Inf{
-    border-bottom: solid 1px;
-    padding-bottom: 7px;
-}
-@media (max-width:767px){
-	#panier .modal-dialog{
-		width: 90%;
-	}
-}
-/*Fin classes pour le panier*/
+
+
+
+
+
+
