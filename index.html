@@ -43,9 +43,9 @@
                 <div class="navbar-collapse collapse" id="collapseUn">
                     <ul class="nav navbar-nav pull-right">
                         <li><a class="text-info" href="#">Anglais</a></li>
-                         <li class="btn-default"><a href="#session" data-toggle="modal" data-target="#session">Se connecter</a></li><!--Modal Se connecter -->
-                        <li class="btn-default"><a href="#session" data-toggle="modal" data-target="#inscrire"> S'inscrire</a></li><!--Modal S'inscrire -->
-                        <li class="btn-default"><a href="#panier" data-toggle="modal" data-target="#panier"><span class="glyphicon glyphicon-shopping-cart"></span> panier</a></li><!--Modal Panier -->
+                        <li><a href="#">Se connecter</a></li>
+                        <li><a href="#">S'inscrire</a></li>
+                        <li class=" btn-default"><a href="./pages/contact.html"><span class="glyphicon glyphicon-shopping-cart"></span> panier</a></li>
                     </ul>
                 </div><!--/.navbar-collapse -->
               </nav><!--/.container -->
@@ -569,141 +569,7 @@
 				<p class="pull-left">&copy; Zaida Melo, Atelier de mode, 2014</p>
                 <p class="pull-right">Réalisation: Groupe4</p>
 			</footer>
-        <!-- Modal se connecter-->
-    <article class="modal fade" id="session" role="dialog" >
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <article class="modal-body row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <div class="col-sm-6 col-xs-12">
-                                <h3  class="text-primary">Ouvrir une session</h3>
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                    </div>
-                                    <div class="">
-                                        <a class="small "> Mot de passe oublié?</a>    
-                                    </div>
-                                    <div class="checkbox">
-                                        <label class="small">
-                                            <input type="checkbox">Garder ma session ouverte
-                                        </label>
-                                    </div>
-                                      <button type="submit" class="btn btn-default btn-primary">Connecter</button>
-                                </form>
-                            </div>   
-                            <div class="col-sm-6 col-xs-12 text-left">
-                                <h3  class="text-primary">Créer un compte</h3> 
-                                <p class="small text-justify"> Vous n’avez pas de compte? Créez un pour faire le suivi de vos achats, consulter l’historique de vos commandes et recevoir des offres exclusives et nos derniéres tendances.  <strong>L’inscription est simple et gratuite! </strong></p>
-                                <button class="btn btn-default btn-primary">Créer un compte</button>
-                            </div>
-                            <button type="button" class="close modal-backdrop pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></button>
-                        </div>
-                    </div>
-                    <footer class="modal-footer">
-                        
-                    </footer>
-                </article>
-            </div>
-        </div>
-    </article><!--/Se connecter -->
-    <!-- Modal Creer un compte-->
-    <article class="modal fade" id="inscrire" role="dialog" >
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <article class="modal-body row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <h3  class="text-primary">Créer un compte</h3>
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label for="exampleInputPrenom">Prénom</label>
-                                        <input type="text" class="form-control" id="exampleInputPrenom">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPrenom">Nom</label>
-                                        <input type="text" class="form-control" id="exampleInputNom">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword">Confirmer le Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
-                                    </div>
-                                    <div class="checkbox">
-                                        <label class="small">
-                                            <input type="checkbox">Recevoir des offres exclusives et nos derniéres tendances.
-                                        </label>
-                                    </div>
-                                      <button type="submit" class="btn btn-default btn-primary">Créer un compte</button>
-                                </form>
-                        </div>   
-                            <button type="button" class="close modal-backdrop pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></button>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </article><!--/creer compte -->
-    
-    <!-- Modal panier -->
-    <article class="modal fade" id="panier" role="dialog" >
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <article class="modal-body row">
-                    <h3 class="text-primary text-center">Mon Panier</h3>
-                    <div class="col-md-3 col-sm-4 col-xs-4">
-                        <img src="../images/Finissante-01.jpg" alt="" >	
-                    </div>
-                    <div class="col-md-9 col-sm-8 col-xs-8 bor-Inf"><!--Div pour chaque produit -->
-                        <div class="row">
-                            <div class="col-sm-6 col-xs-12">
-                                <h3>Nom du Produit</h3>
-                                <p class="small text-right"><span class="glyphicon glyphicon-ok"></span> En stock</p>
-                                
-                                <br></br>
-                                <p  class="small" >Quantité: </p>
-                                <div class="input-group input-group-xs ">
-                                    <span class="btn btn-default input-group-addon glyphicon glyphicon-minus btn-xs"></span>
-                                    <input type="text" class="form-control input-xs text-center col-xs-1" placeholder="Qté">
-                                    <span class="btn btn-default input-group-addon glyphicon glyphicon-plus btn-xs"></span>
-                                </div>
-                                <br />
-                                <a class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove text-primary"></span> Supprimer</a>
-                            </div>
-                            <div class="col-sm-6 col-xs-12 text-right">
-                                <div class="row">
-                                <p class="small col-xs-6">prix :</p><p class="small col-xs-6">100,00$</p>
-                                <p class="small col-xs-6">TPS :</p><p class="small col-xs-6">5,00$</p>
-                                <p class="small col-xs-6">TVQ :</p><p class="small col-xs-6">10,00$</p>
-                                </div>
-                                
-                            </div>
-                            <button type="button" class="close modal-backdrop pull-right" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove"></span></button>
-                        </div>
-                    </div><!--/Div chaque produit -->
-                    <footer class="modal-footer">
-                        <div class="col-sm-12">
-                            <h1 class="text-primary">TOTAL : 115.00$</h1>
-                            <button class="btn btn-default btn-primary">Passer à la caisse</button>
-                        </div>
-                    </footer>
-                </article>
-            </div>
-        </div>
-
-    </article><!--/modal panier-->
+        
         
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
