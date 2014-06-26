@@ -8,22 +8,8 @@
       padding-bottom: 40px;
       color: #5a5a5a;
 	  background-color:#bbbbbb;
-	   padding-top: 60px;
-        padding-bottom: 40px;
     }
-	
-      .sidebar-nav {
-        padding: 9px 0;
-      }
 
-      @media (max-width: 980px) {
-        /* Enable use of floated navbar text */
-        .navbar-text.pull-right {
-          float: none;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
-      }
 
 
     /* CUSTOMIZE THE NAVBAR
@@ -317,7 +303,7 @@ img{
     }
 
 .modal-footer1 {
-  margin-top: 300px;
+  margin-top: 200px;
   text-align: right;
   background-color: red;
   border-top: 1px solid #ddd;
@@ -337,39 +323,3 @@ img{
 .span3_1 {
   width: 520px;
 }
-
-.agenda{
-	float:left;border:dashed px red;margin-top:20px;
-}
-.reseaux_socio{
-	float:left;margin-top:0px;margin-left:90px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

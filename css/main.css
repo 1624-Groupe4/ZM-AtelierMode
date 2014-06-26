@@ -172,7 +172,7 @@ form fieldset > div{
 .modal-backdrop{
 	left:auto;
 	bottom:auto;
-	right:2px;
+	right:4px;
 }
 /*Pour enlever la bordeure, le top et le bottom padding du header dans le modal, où il se trouve l'image pour chaque produit*/
 .modal-header{
@@ -193,6 +193,9 @@ form fieldset > div{
 .text-primary{
 	color:#db87b9 !important;
 }
+a.text-primary:hover{
+	color:#AAA !important;
+}
 /*Pour changer la couleur du "text-primary"*/
 .text-success{
 	color:#FFF !important;
@@ -209,14 +212,25 @@ form fieldset > div{
 	color:#FFF;
 }
 .btn-primary:hover{
-	background-color:#F3C;    /*db87b9*/
+	background-color:#db87b9;    /*db87b9*/
 	background-image: linear-gradient(to bottom, #db87b9 0px, #F3C 100%);
 	border-color:#F3C;
 	color:#FFF;
 }
+.btn-primary:active{
+	background-color:#db87b9;    /*db87b9*/
+	border-color:#F3C;
+}
+.btn-primary:focus{
+	background-color:#db87b9;    /*db87b9*/
+	border-color:#F3C;
+}
 /*pour change la couleur du li panier dans le menu secondaire*/
 .navbar-default li.btn-default a{
 	color:#db87b9;
+}
+.navbar-default li.btn-default a:hover{
+	color:#AAA;
 }
 
 /*Pour enlever la ligne blanche*/
@@ -238,31 +252,31 @@ form fieldset > div{
 	color:#BBB;
 }
 a.text-info:hover{
-	color:#AAA;
+	color:#AAA !important;
 }
 /*Pour personnaliser les listes dans les modals*/
-.modal-body .list-group-item{
+main .modal-body .list-group-item{
 	padding:10px 0px;
 	border:none;
 	border-top:solid 1px #999999;
 	border-bottom:solid 1px #999999;
 	border-radius:0px;
 }
-.modal-body .list-group{
+main .modal-body .list-group{
 	border:none;
 	box-shadow:none;
 }
 /*Pour personnaliser les listes dans le footer*/
-.list-group-item{
+#footer .list-group-item{
 	padding:5px 15px;
 	border:none;
 }
-.list-group{
+#footer .list-group{
 	border:none;
 	box-shadow:none;
 }
-li.list-group-item.bg-danger a:hover{
-	color:#999;
+#footer li.list-group-item a:hover{
+	color:#999 !important;
 	text-decoration:none;
 }
 /*Pour changer le margin des balises strong dans les "modals", sauf le premier strong*/
@@ -273,14 +287,18 @@ li.list-group-item.bg-danger a:hover{
 	margin-left:0px;
 }
 
+
 /*pour definir la balise h5*/
 h5{
 	font-style:italic;
 }
 
 /*pour changer l'hauteur du textarea*/
-#textarea{
+#contact textarea{
 	height:200px;
+}
+#rendezvous textarea{
+	height:100px;
 }
 /*réseaux sociaux*/
 .res-social-sm {
@@ -338,8 +356,38 @@ hr{
 .no-padding{
 	padding:0px;
 }
+/*classes pour le panier  Créés par Carlos Buitrago*/
+#panier span.input-group-addon{
+	top: 0px;	
+}
+#panier .modal-dialog{
+	width: 60%;
+}
+@media (max-width:767px){
+	#panier .modal-dialog{
+		width: 90%;
+	}
+}
+/*pour la "x" pour fermer les modals*/
+#panier .modal-backdrop,
+#session .modal-backdrop,
+#inscrire .modal-backdrop{
+	font-size:14px;
+	right:2px;
+}
+/*Fin classes pour le panier*/
+
+/* Classes pour les social medias */
 
 
+/* Button styles: */
+i.fb,       span.fb{     	color: #0c1322; }
+i.tw,       span.tw{     	color: #0c1322; }
+i.pinterest,span.pinterest{ color: #0c1322; }
+
+
+
+/* Fin classes pour les social medias */
 
 
 
